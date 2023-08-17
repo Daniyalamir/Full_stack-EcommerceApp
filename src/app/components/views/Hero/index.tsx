@@ -1,5 +1,10 @@
 import React from 'react'
 import { heroimage } from '../../assets/Images'
+import logo from '@/app/components/assets/Images/logo1.webp';
+import logo1 from '@/app/components/assets/Images/logo2.webp';
+import logo2 from '@/app/components/assets/Images/logo3.webp';
+import logo3 from '@/app/components/assets/Images/logo4.webp';
+
 import Image  from 'next/image'
 import { BsCart2 } from 'react-icons/bs'
 
@@ -16,10 +21,10 @@ const Hero = () => {
                     <p className='text-primaryWhite md:whitespace-pre-line font-semibold '>Start Shopping</p>
                     </button>
                     <div className='flex space-x-10 ' >
-                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={'https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured1.66abddd4.png&w=128&q=75'} alt='brandimage'  /></div>
-                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={'https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured2.247cd605.png&w=128&q=75'} alt='brandimage'  /></div>
-                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={'https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured3.6076521d.png&w=128&q=75'} alt='brandimage'  /></div>
-                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={'https://full-stack-ecommerce-clothing-web.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FFeatured4.0489f1fc.png&w=128&q=75'} alt='brandimage'  /></div>
+                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={logo} alt='brandimage'  /></div>
+                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={logo1} alt='brandimage'  /></div>
+                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={logo2} alt='brandimage'  /></div>
+                   <div className='w-12 lg:w-24'> <Image height={100} width={70} src={logo3} alt='brandimage'  /></div>
                     </div>
 
             </div>
@@ -29,7 +34,7 @@ const Hero = () => {
             </div>
 
         </div>
-    ) 
+    )
 }
 
 export default Hero
