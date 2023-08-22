@@ -3,6 +3,7 @@ import Image from "next/image";
 
 const ProductType = () => (
   <div className="parent py-16 px-2 space-y-10">
+    {/* Heading */}
     <div className="1 text-center  border space-y-3">
       <p className="text-blue-800 text-sm font-bold ">Promtions</p>
       <h3 className="text-3xl font-bold ">Our Promotions Events</h3>

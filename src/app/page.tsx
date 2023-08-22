@@ -4,6 +4,9 @@ import Hero from '@/app/components/views/Hero'
 import ProductType from '@/app/components/views/ProductTypes'
 import BASE_PATH_FORAPI from '@/app/components/shared/Wrapper/BasePath'
 import ProductCarousal from '@/app/components/views/ProductCarousal'
+import Jewellery from './components/views/Jewellery'
+import Footer from './components/views/Footer'
+import Newsletter from './components/views/Newsletter'
 
 
 
@@ -15,14 +18,17 @@ async function fetchAllProductsData(){
     return response.json()
   }
 export default async function Home() {
-  let {res}  = await fetchAllProductsData();
-  console.log("response :" , res);
-
-  return (
+  let {response}  = await fetchAllProductsData();
+  // console.log("response :" , response);
+return (
     <div>
-    <Hero/>
-    <ProductType/>
-    <ProductCarousal ProductData ={res}/>
+     <Hero/>
+     <ProductType/>
+    <ProductCarousal ProductData ={response}/> 
+    <Jewellery/>
+    <Newsletter/>
+    <Footer/>
+    
     </div>
   )
-  }
+}
