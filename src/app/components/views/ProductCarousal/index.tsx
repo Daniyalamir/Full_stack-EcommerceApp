@@ -91,8 +91,9 @@ import 'swiper/css';
 // export default ProductCarousal
 
 //////////////////////////////////////////////
-const ProductCarousal:FC<{ProductData : Array<oneProductType>}> = ({ProductData}) => {
-    let dataToIterate = ProductData.slice(0,15);
+const ProductCarousal:FC<{MyProductData : Array<oneProductType>}> = ({MyProductData}) => {
+    let dataToIterate = MyProductData.slice(0,15);
+    // console.log(ProductData)
   return (
      <>   
      <div className="1 text-center  border space-y-3">

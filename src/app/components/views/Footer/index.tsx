@@ -1,8 +1,14 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
+import { FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
+  const handleGitHubClick = () => {
+    window.open('https://github.com/Daniyalamir', '_blank');
+  };
   return (
     <>   
     <div className="flex justify-start md:justify-center items-center max-w-7xl mx-auto pl-5">
@@ -16,16 +22,21 @@ export default function Footer() {
 
           {/* <p> */}
             {" "}
-            <div className="flex items-center gap-x-5">
-              <div className="bg-gray-300 rounded-md p-2">
+            <div className="flex items-center gap-x-5 cursor-pointer">
+              <div className="bg-gray-300 rounded-md p-2 hover:scale-105 duration-300">
                 <FaFacebook size={20} className="text-black" />
               </div>
-              <div className="bg-gray-300 rounded-md p-2">
+              <div className="bg-gray-300 rounded-md p-2 hover:scale-105 duration-300">
                 <FaTwitter size={20} className="text-black" />
               </div>
-              <div className="bg-gray-300 rounded-md p-2">
+              <div className="bg-gray-300 rounded-md p-2 hover:scale-105 duration-300">
                 <FaLinkedin size={20} className="text-black" />
               </div>
+              <div className="bg-gray-300 rounded-md p-2 hover:scale-105 duration-300">
+              <FaGithub size={20}  className="text-black" onClick={handleGitHubClick}/>
+              </div>
+              
+        
             </div>
           {/* </p> */}
         </div>
@@ -57,7 +68,8 @@ export default function Footer() {
     <div className='grid md:grid-cols-3 grid-cols-1 max-w-7xl mx-auto p-14 md:space-y-0 space-y-5 md:pl-10 mt-3 text-lg text-gray-600'>
       <p className='col-span-1'>Copyright © 2023 Bazar Ghar</p>
       <p className='col-span-1'>Design by. <strong className='text-black'> Trackterra</strong></p>
-      <p className='col-span-1'>Code by. <strong className='text-black'> Daniyalaamir on GitHub </strong></p>
+     
+       <p className='col-span-1'>Code by. <strong className='text-black'> Daniyalaamir on GitHub </strong></p>
     </div>
     
   </div>

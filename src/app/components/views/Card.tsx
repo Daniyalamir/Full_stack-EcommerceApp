@@ -13,8 +13,9 @@ function urlFor(source : any ){
   return builder.image(source)
 }
 const Card:FC<{singleProductData:oneProductType}> = ({singleProductData}) => {
-  // console.log(singleProductData.description)
+  // console.log(singleProductData)
   //   console.log(urlFor(singleProductData.image[0]).width(500).url())  
+  // console.log(singleProductData.slug.current)
   return (
     <Link href={`/catalog/${singleProductData.slug.current}`} >  
     <div className='border max-w-sm space-y-3 hover:scale-110 duration-300'>
