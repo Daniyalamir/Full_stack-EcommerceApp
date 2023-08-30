@@ -106,4 +106,4 @@ const allProducts = async () => {
   )
 }
 
-export default allProducts;
+export default allProducts
