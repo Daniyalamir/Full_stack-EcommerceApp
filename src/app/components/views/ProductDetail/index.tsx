@@ -88,7 +88,9 @@ const ProductDetail: FC<{ item: oneProductType }> = ({ item }) => {
           <p className="text-lg font-semi-bold text-gray-700">Select size</p>
           <div className="MapCover flex gap-4 text-pink-600 text-sm md:text-lg">
             {item.size.map((subitem: string, index: number) => (
-              <div className="font-semibold hover:ring ring-pink-300  rounded-full flex bg-gray-100  w-12 h-12 justify-center items-center hover:scale-105 duration-300 cursor-pointer ">
+              <div
+              key={index}
+               className="font-semibold hover:ring ring-pink-300  rounded-full flex bg-gray-100  w-12 h-12 justify-center items-center hover:scale-105 duration-300 cursor-pointer ">
                 {subitem}
               </div>
             ))}
