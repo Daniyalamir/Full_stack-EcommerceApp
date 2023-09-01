@@ -39,3 +39,6 @@ const Card:FC<{singleProductData:oneProductType}> = ({singleProductData}) => {
 }
 
 export default Card
+
+
+

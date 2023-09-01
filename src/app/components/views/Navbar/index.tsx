@@ -37,6 +37,7 @@ function  handleSearchCalledFunc(e: any){
     <div className="coverdiv sticky top-0 bg-white/70 backdrop-blur-sm  z-50">
       <div className=" py-6 flex justify-around  items-center">
         {/* for logo */}
+        <Link href="/">
         <div className="1 w-36 flex-shrink-0">
           <Image
             className=""
@@ -46,6 +47,7 @@ function  handleSearchCalledFunc(e: any){
             src={"/Logo.webp"}
           />
         </div>
+        </Link>
 
         {/*  this div for hidden the desktop view  */}
         <div className="hidden lg:flex justify-between items-center   ">
