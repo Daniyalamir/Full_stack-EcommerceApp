@@ -130,3 +130,4 @@ const ProductDetail: FC<{ item: oneProductType }> = ({ item }) => {
 };
 
 export default ProductDetail;
+//
